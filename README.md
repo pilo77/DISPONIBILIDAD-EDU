@@ -113,6 +113,22 @@ En XP, los roles clave son más flexibles y colaborativos que en otras metodolog
 
 - **Tracker**: Este rol supervisa el progreso del proyecto y se asegura de que el equipo cumpla con los tiempos estimados, ayudando a identificar obstáculos que puedan retrasar las entregas.
 
+## Valores Fundamentales de XP
+
+En el desarrollo de este proyecto, nos guiamos por los valores fundamentales de **Extreme Programming (XP)** para asegurar la calidad y efectividad del sistema. Estos valores son:
+
+- **Comunicación**: Mantendremos una comunicación constante y clara entre todos los miembros del equipo y el cliente. Utilizaremos reuniones diarias y sesiones de revisión para asegurar que todos estén alineados con los objetivos del proyecto.
+
+- **Simplicidad**: Adoptaremos un enfoque de desarrollo que prioriza soluciones simples y elegantes. Implementaremos solo las funcionalidades necesarias y realizaremos refactorizaciones para mantener la simplicidad del sistema.
+
+- **Feedback**: Buscaremos retroalimentación continua del cliente y de las pruebas realizadas para ajustar y mejorar el sistema. Realizaremos revisiones de iteración y aplicaremos pruebas automatizadas para garantizar que el producto cumpla con las expectativas.
+
+- **Coraje**: Enfrentaremos desafíos técnicos y tomaremos decisiones difíciles con determinación. Aplicaremos prácticas como el desarrollo guiado por pruebas (TDD) y la refactorización para mantener la calidad del código y la adaptabilidad del sistema.
+
+- **Respeto**: Fomentaremos un ambiente de respeto y colaboración entre todos los miembros del equipo. Practicaremos el trabajo en pareja y colaboraremos en la planificación y ejecución de tareas para asegurar un trabajo en equipo efectivo y respetuoso.
+
+Estos valores no solo guían nuestras prácticas, sino que también aseguran que el proyecto avance de manera eficiente y cumpla con los requisitos del cliente de la mejor manera posible.
+
 ## Diseño de Software en XP
 
 El enfoque de diseño en XP se basa en el principio de **simplicidad**. Esto implica que el sistema se construya con la mínima complejidad necesaria para que funcione correctamente, permitiendo mejoras y cambios de forma constante. En lugar de realizar un diseño exhaustivo al inicio del proyecto, el diseño evoluciona conforme se obtienen más conocimientos y se comprenden mejor los requisitos.
