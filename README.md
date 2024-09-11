@@ -51,30 +51,31 @@ El sistema proporcionará una página web que permitirá a los encargados gestio
 
 ## Requerimientos No Funcionales
 
-- **RNF1: Seguridad del Sistema**
-  - **Descripción**: Protección de credenciales y datos sensibles.
-  - **Criterios de Evaluación**: Autenticación segura, cifrado de datos y validación de permisos.
+- **RNF1: Protección de Datos y Seguridad**
+  - **Descripción**: Garantizar la seguridad de la información y la protección contra accesos no autorizados.
+  - **Criterios de Evaluación**: Implementación de medidas de autenticación robustas, cifrado de datos en tránsito y en reposo, y gestión adecuada de permisos de usuario.
   - **Prioridad**: Alta
 
-- **RNF2: Escalabilidad y Rendimiento**
-  - **Descripción**: Soporte a múltiples usuarios simultáneos sin pérdida de rendimiento.
-  - **Criterios de Evaluación**: Manejo de concurrencia, optimización de bases de datos, distribución de carga.
+- **RNF2: Escalabilidad y Capacidad de Manejo de Carga**
+  - **Descripción**: Asegurar que el sistema pueda manejar un número creciente de usuarios y operaciones sin degradación en el rendimiento.
+  - **Criterios de Evaluación**: Evaluación de la capacidad del sistema para manejar múltiples solicitudes concurrentes, optimización del rendimiento de bases de datos, y capacidad para distribuir la carga entre servidores si es necesario.
   - **Prioridad**: Alta
 
-- **RNF3: Interfaz de Usuario (UI/UX)**
-  - **Descripción**: Interfaz fácil de usar, adaptable y accesible desde múltiples dispositivos.
-  - **Criterios de Evaluación**: Adaptación a diferentes resoluciones y dispositivos.
+- **RNF3: Usabilidad y Experiencia del Usuario**
+  - **Descripción**: Proporcionar una interfaz intuitiva y fácil de usar que se adapte a diferentes dispositivos y resoluciones de pantalla.
+  - **Criterios de Evaluación**: Pruebas de usabilidad para asegurar una navegación fluida, diseño responsive que se adapte a dispositivos móviles y de escritorio, y cumplimiento de principios de diseño accesible.
   - **Prioridad**: Media
 
-- **RNF4: Disponibilidad del Sistema**
-  - **Descripción**: El sistema debe estar disponible el 99.9% del tiempo, con mantenimientos planificados fuera de horarios críticos.
-  - **Criterios de Evaluación**: Monitoreo y planificación de tiempos de inactividad.
+- **RNF4: Alta Disponibilidad y Fiabilidad**
+  - **Descripción**: Garantizar que el sistema tenga un tiempo de actividad cercano al 100%, minimizando los tiempos de inactividad y asegurando la continuidad del servicio.
+  - **Criterios de Evaluación**: Implementación de estrategias de alta disponibilidad, planes de contingencia para fallos del sistema, y programación de mantenimientos en horarios de menor impacto.
   - **Prioridad**: Alta
 
-- **RNF5: Mantenimiento y Soporte**
-  - **Descripción**: Plan de soporte y mantenimiento continuo.
-  - **Criterios de Evaluación**: Diagnóstico, parches, actualizaciones de software.
+- **RNF5: Soporte Técnico y Actualizaciones**
+  - **Descripción**: Proveer un plan integral para el soporte técnico y la actualización continua del sistema.
+  - **Criterios de Evaluación**: Disponibilidad de soporte técnico para resolver problemas, procedimientos para aplicar parches de seguridad y actualizaciones periódicas para mejorar el sistema.
   - **Prioridad**: Media
+  
 ## Levantamiento de Requerimientos
 
 En XP, el levantamiento de los requerimientos es un proceso iterativo y colaborativo. El cliente (en este caso, el director del programa) trabaja de la mano con el equipo de desarrollo para crear **historias de usuario**, que describen las necesidades del sistema desde la perspectiva del usuario final. Estas historias se priorizan y se desarrollan en ciclos cortos, permitiendo la entrega continua de valor.
