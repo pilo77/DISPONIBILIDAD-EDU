@@ -129,6 +129,20 @@ En el desarrollo de este proyecto, nos guiamos por los valores fundamentales de 
 
 Estos valores no solo guían nuestras prácticas, sino que también aseguran que el proyecto avance de manera eficiente y cumpla con los requisitos del cliente de la mejor manera posible.
 
+## Ciclo de Desarrollo en XP
+
+El ciclo de desarrollo en **Extreme Programming (XP)** se compone de las siguientes fases, que se repiten en cada iteración:
+
+1. **Exploración**: Se identifican y definen los requisitos del cliente. El equipo trabaja estrechamente con el cliente para comprender las necesidades y establecer las prioridades para la iteración.
+
+2. **Planeación**: Basado en los requisitos identificados, el equipo planifica las tareas y define los objetivos para la iteración. Se estima el tiempo y el esfuerzo necesario para cada tarea.
+
+3. **Desarrollo**: Se implementan las funcionalidades planificadas. El equipo realiza programación en pareja, utiliza desarrollo guiado por pruebas (TDD) y mantiene el código simple y bien estructurado.
+
+4. **Pruebas**: El sistema se somete a pruebas rigurosas para asegurar que cumple con los requisitos y funciona correctamente. Se realizan pruebas automatizadas y de integración para verificar la funcionalidad.
+
+5. **Revisión**: Al final de la iteración, el equipo presenta el trabajo completado al cliente para obtener retroalimentación. Se revisa el progreso y se ajustan los requisitos y la planificación según sea necesario
+
 ## Diseño de Software en XP
 
 El enfoque de diseño en XP se basa en el principio de **simplicidad**. Esto implica que el sistema se construya con la mínima complejidad necesaria para que funcione correctamente, permitiendo mejoras y cambios de forma constante. En lugar de realizar un diseño exhaustivo al inicio del proyecto, el diseño evoluciona conforme se obtienen más conocimientos y se comprenden mejor los requisitos.
