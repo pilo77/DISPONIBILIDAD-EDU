@@ -122,13 +122,5 @@ El enfoque de diseño en XP se basa en el principio de **simplicidad**. Esto imp
 - **Refactorización continua**: El código se mejora de manera regular para mantener su simplicidad y claridad.
 - **Diseño emergente**: El diseño del sistema cambia y mejora conforme se desarrollan nuevas funcionalidades.
 
-## Repositorio Git
 
-Este proyecto se gestiona utilizando **Git** como sistema de control de versiones. Los cambios en el código se integran de manera continua para asegurar la estabilidad y coherencia del proyecto.
 
-### Clonar el repositorio
-
-Para obtener una copia local del proyecto, usa el siguiente comando:
-
-```bash
-git clone https://github.com/usuario/nombre-del-repositorio.git
