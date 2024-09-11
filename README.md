@@ -1,66 +1,80 @@
-# Sistema de Gestión de Horarios - Proyecto XP
-
-## Necesidad del Cliente
-
-La institución educativa enfrenta dificultades en la organización de horarios de clases debido al uso de hojas de cálculo, lo que genera desorden en la asignación de clases y problemas con la disponibilidad de profesores y salones. Esto resulta en confusión, conflictos de horarios y pérdida de tiempo, afectando tanto a los docentes como a los encargados de la planificación.
+# Sistema de Gestión de Horarios
 
 ## Objetivo
 
-Desarrollar una página web que facilite la gestión de los horarios de clases, optimizando la distribución de salones y horas de trabajo de los profesores. Esta herramienta mejorará la planificación, eliminando los problemas de conflictos de horarios y mejorando la comunicación con los profesores mediante la posibilidad de imprimir y enviar los horarios por correo electrónico o WhatsApp.
+El objetivo de este proyecto es desarrollar una aplicación web que permita gestionar de manera eficiente los horarios de clases de una institución educativa. El sistema facilita la asignación de docentes, salones y horarios, evitando conflictos de horarios y mejorando la organización. Además, proporciona notificaciones automáticas a los profesores por correo electrónico y WhatsApp, permitiendo que reciban sus horarios de forma clara y oportuna.
+
+## Problemática
+
+La institución educativa enfrenta problemas para organizar los horarios de clases debido al uso de hojas de cálculo. Este método no les permite llevar un buen control sobre las horas de trabajo de los profesores, los salones disponibles ni las asignaturas asignadas, lo que genera conflictos de horarios y una gestión ineficiente. Esta situación causa confusión tanto para los profesores como para los encargados de la administración y provoca una considerable pérdida de tiempo.
+
+## Solución
+
+El sistema proporcionará una página web que permitirá a los encargados gestionar de forma eficiente los horarios de clases, tomando en cuenta la disponibilidad de los salones y los horarios de los docentes, así como sus roles contractuales. El sistema enviará los horarios a los profesores por correo electrónico y WhatsApp, asegurando que la información sea clara y fácilmente accesible. También se podrán exportar e imprimir los horarios en formato PDF.
 
 ## Requerimientos Funcionales
 
-### RF1: Gestión de Docentes y Carga Académica
-**Historia de Usuario**: El director del programa debe gestionar la carga académica de los docentes según su contrato.
-- **Criterios de Aceptación**: Ingreso de información de docentes, cálculo automático de horas según el contrato, registro y actualización automática de la carga horaria.
-- **Prioridad**: Alta
+- **RF1: Gestión de Docentes y Carga Académica**
+  - **Historia de Usuario**: El director del programa debe poder gestionar la carga académica de los docentes, considerando los diferentes tipos de contratos (TC-40, MT-26, C-16).
+  - **Criterios de Aceptación**: El sistema debe permitir ingresar información de los docentes, calcular automáticamente sus horas de trabajo según su tipo de contrato, y actualizar la carga horaria en tiempo real.
+  - **Prioridad**: Alta
 
-### RF2: Gestión de Salones y Bloques
-**Historia de Usuario**: El director organiza la asignación de salones y horarios de clases, evitando conflictos de disponibilidad.
-- **Criterios de Aceptación**: Asignación de salones de forma manual o automática sin solapamientos.
-- **Prioridad**: Alta
+- **RF2: Gestión de Salones y Bloques**
+  - **Historia de Usuario**: El director del programa debe poder asignar salones por bloques de tiempo, evitando conflictos de horarios.
+  - **Criterios de Aceptación**: El sistema debe permitir la asignación manual o automática de salones (A, B, C, con capacidad para 30 estudiantes), sin solapamientos.
+  - **Prioridad**: Alta
 
-### RF3: Asignación de Horarios y Evitación de Cruces
-**Historia de Usuario**: El director asigna horarios a los docentes, asegurándose de que no haya cruces o sobrecargas horarias.
-- **Criterios de Aceptación**: Asignación de horarios respetando disponibilidad de profesores y evitando conflictos de horario.
-- **Prioridad**: Alta
+- **RF3: Asignación de Horarios y Evitación de Cruces**
+  - **Historia de Usuario**: El director del programa debe poder asignar los horarios de los docentes de acuerdo con su disponibilidad, evitando cruces o sobrecargas horarias.
+  - **Criterios de Aceptación**: Asignación automática de horarios basada en la disponibilidad de los profesores y evitando conflictos con otras clases.
+  - **Prioridad**: Alta
 
-### RF4: Exportación e Impresión de Horarios
-**Historia de Usuario**: El director debe imprimir los horarios de clases en un formato estandarizado.
-- **Criterios de Aceptación**: Exportación de horarios en formato PDF listo para impresión.
-- **Prioridad**: Media
+- **RF4: Gestión de Asignaturas**
+  - **Historia de Usuario**: El director del programa debe poder asignar materias a los docentes y organizarlas en el sistema para su planificación.
+  - **Criterios de Aceptación**: El sistema debe permitir gestionar las asignaturas y vincularlas con los docentes y los salones.
+  - **Prioridad**: Alta
 
-### RF5: Envío de Horarios por Email y WhatsApp
-**Historia de Usuario**: El director del programa envía los horarios a los profesores por correo electrónico o WhatsApp.
-- **Criterios de Aceptación**: Envío automático de horarios con confirmación de recepción.
-- **Prioridad**: Media
+- **RF5: Exportación e Impresión de Horarios**
+  - **Historia de Usuario**: El director del programa debe poder exportar los horarios en un formato estandarizado para impresión o distribución.
+  - **Criterios de Aceptación**: Exportación de horarios en formato PDF para su impresión.
+  - **Prioridad**: Media
+
+- **RF6: Envío de Horarios por Email y WhatsApp**
+  - **Historia de Usuario**: Los profesores deben recibir automáticamente sus horarios por correo electrónico o WhatsApp.
+  - **Criterios de Aceptación**: Envío automático de horarios y confirmación de recepción.
+  - **Prioridad**: Media
+
+- **RF7: Notificaciones Automáticas**
+  - **Historia de Usuario**: Los profesores deben recibir notificaciones automáticas en caso de que haya cambios o actualizaciones en sus horarios.
+  - **Criterios de Aceptación**: Envío de notificaciones automáticas por correo electrónico o WhatsApp cuando se realicen cambios en los horarios.
+  - **Prioridad**: Alta
 
 ## Requerimientos No Funcionales
 
-### RNF1: Seguridad del Sistema
-**Descripción**: Protección de credenciales y datos sensibles de docentes y salones.
-- **Criterios de Evaluación**: Autenticación segura, cifrado de datos y validación de permisos de acceso.
-- **Prioridad**: Alta
+- **RNF1: Seguridad del Sistema**
+  - **Descripción**: Protección de credenciales y datos sensibles.
+  - **Criterios de Evaluación**: Autenticación segura, cifrado de datos, y validación de permisos.
+  - **Prioridad**: Alta
 
-### RNF2: Escalabilidad y Rendimiento
-**Descripción**: El sistema debe soportar múltiples usuarios simultáneos sin afectarse el rendimiento.
-- **Criterios de Evaluación**: Manejo de concurrencia, optimización de bases de datos, distribución de carga eficiente.
-- **Prioridad**: Alta
+- **RNF2: Escalabilidad y Rendimiento**
+  - **Descripción**: Soporte a múltiples usuarios simultáneos sin pérdida de rendimiento.
+  - **Criterios de Evaluación**: Manejo de concurrencia, optimización de bases de datos, distribución de carga.
+  - **Prioridad**: Alta
 
-### RNF3: Interfaz de Usuario (UI/UX)
-**Descripción**: El sistema debe ser fácil de usar y accesible desde distintos dispositivos.
-- **Criterios de Evaluación**: Adaptación a diferentes resoluciones y dispositivos móviles.
-- **Prioridad**: Media
+- **RNF3: Interfaz de Usuario (UI/UX)**
+  - **Descripción**: Interfaz fácil de usar, adaptable y accesible desde múltiples dispositivos.
+  - **Criterios de Evaluación**: Adaptación a diferentes resoluciones y dispositivos.
+  - **Prioridad**: Media
 
-### RNF4: Disponibilidad del Sistema
-**Descripción**: El sistema debe estar disponible el 99.9% del tiempo, con mantenimientos fuera de horarios críticos.
-- **Criterios de Evaluación**: Monitoreo constante y planificación de tiempos de inactividad.
-- **Prioridad**: Alta
+- **RNF4: Disponibilidad del Sistema**
+  - **Descripción**: El sistema debe estar disponible el 99.9% del tiempo, con mantenimientos planificados fuera de horarios críticos.
+  - **Criterios de Evaluación**: Monitoreo y planificación de tiempos de inactividad.
+  - **Prioridad**: Alta
 
-### RNF5: Mantenimiento y Soporte
-**Descripción**: Plan de soporte y mantenimiento continuo del sistema.
-- **Criterios de Evaluación**: Actualizaciones periódicas, corrección de errores y mejoras de funcionalidad.
-- **Prioridad**: Media
+- **RNF5: Mantenimiento y Soporte**
+  - **Descripción**: Plan de soporte y mantenimiento continuo.
+  - **Criterios de Evaluación**: Diagnóstico, parches, actualizaciones de software.
+  - **Prioridad**: Media
 
 ## Levantamiento de Requerimientos
 
