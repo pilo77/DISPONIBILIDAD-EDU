@@ -158,4 +158,4 @@ El enfoque de diseño en XP se basa en el principio de **simplicidad**. Esto imp
 La documentación mas detallada del proyecto en el marco de trabajo para desarrollo ágil de Software Scrum, se puede ver en el siguiente enlace redireccionado al Drive:
 
 ### [Documento](https://docs.google.com/document/d/1OV6Yk-lWfgobOcHDnXjiGqmO7jfshhHu/edit?usp=sharing&ouid=109014329295797922250&rtpof=true&sd=true)
-![Portada](d)
+![Portada](IMG/Portada.PNG)
