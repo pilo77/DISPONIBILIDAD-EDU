@@ -1,4 +1,4 @@
-# Sistema de Gestión de Horarios
+# PROYECTO ORGANIZACION-HORARIOS
 
 ## Objetivo
 
