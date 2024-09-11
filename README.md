@@ -10,28 +10,28 @@ La institución educativa enfrenta problemas para organizar los horarios de clas
 
 ## Solución
 
-El sistema proporcionará una página web que permitirá a los encargados gestionar de forma eficiente los horarios de clases, tomando en cuenta la disponibilidad de los salones y los horarios de los docentes, así como sus roles contractuales. El sistema enviará los horarios a los profesores por correo electrónico y WhatsApp, asegurando que la información sea clara y fácilmente accesible. También se podrán exportar e imprimir los horarios en formato PDF.
+El sistema proporcionará una página web que permitirá a los encargados gestionar de forma eficiente los horarios de clases, tomando en cuenta la disponibilidad de los salones, los horarios de los docentes y sus roles contractuales. El sistema enviará los horarios a los profesores por correo electrónico y WhatsApp, asegurando que la información sea clara y fácilmente accesible. Además, se podrán exportar e imprimir los horarios en formato PDF. Los salones ocupados no podrán ser asignados a otros profesores en el mismo bloque de tiempo, y se verificará que tanto el profesor como el salón estén disponibles antes de hacer la asignación.
 
 ## Requerimientos Funcionales
 
 - **RF1: Gestión de Docentes y Carga Académica**
   - **Historia de Usuario**: El director del programa debe poder gestionar la carga académica de los docentes, considerando los diferentes tipos de contratos (TC-40, MT-26, C-16).
-  - **Criterios de Aceptación**: El sistema debe permitir ingresar información de los docentes, calcular automáticamente sus horas de trabajo según su tipo de contrato, y actualizar la carga horaria en tiempo real.
+  - **Criterios de Aceptación**: El sistema debe permitir ingresar información de los docentes, calcular automáticamente sus horas de trabajo según su tipo de contrato y actualizar la carga horaria en tiempo real.
   - **Prioridad**: Alta
 
 - **RF2: Gestión de Salones y Bloques**
   - **Historia de Usuario**: El director del programa debe poder asignar salones por bloques de tiempo, evitando conflictos de horarios.
-  - **Criterios de Aceptación**: El sistema debe permitir la asignación manual o automática de salones (A, B, C, con capacidad para 30 estudiantes), sin solapamientos.
+  - **Criterios de Aceptación**: El sistema debe permitir la asignación manual o automática de salones (A, B, C, con capacidad para 30 estudiantes), verificando que los salones no estén ocupados en el mismo horario.
   - **Prioridad**: Alta
 
 - **RF3: Asignación de Horarios y Evitación de Cruces**
   - **Historia de Usuario**: El director del programa debe poder asignar los horarios de los docentes de acuerdo con su disponibilidad, evitando cruces o sobrecargas horarias.
-  - **Criterios de Aceptación**: Asignación automática de horarios basada en la disponibilidad de los profesores y evitando conflictos con otras clases.
+  - **Criterios de Aceptación**: Asignación automática de horarios basada en la disponibilidad de los profesores, verificando que el profesor y el salón estén disponibles en el horario seleccionado, evitando conflictos con otras clases.
   - **Prioridad**: Alta
 
 - **RF4: Gestión de Asignaturas**
   - **Historia de Usuario**: El director del programa debe poder asignar materias a los docentes y organizarlas en el sistema para su planificación.
-  - **Criterios de Aceptación**: El sistema debe permitir gestionar las asignaturas y vincularlas con los docentes y los salones.
+  - **Criterios de Aceptación**: El sistema debe permitir gestionar las asignaturas y vincularlas con los docentes y los salones. La asignación de clases debe respetar la disponibilidad de los profesores y los salones.
   - **Prioridad**: Alta
 
 - **RF5: Exportación e Impresión de Horarios**
@@ -53,7 +53,7 @@ El sistema proporcionará una página web que permitirá a los encargados gestio
 
 - **RNF1: Seguridad del Sistema**
   - **Descripción**: Protección de credenciales y datos sensibles.
-  - **Criterios de Evaluación**: Autenticación segura, cifrado de datos, y validación de permisos.
+  - **Criterios de Evaluación**: Autenticación segura, cifrado de datos y validación de permisos.
   - **Prioridad**: Alta
 
 - **RNF2: Escalabilidad y Rendimiento**
@@ -75,7 +75,6 @@ El sistema proporcionará una página web que permitirá a los encargados gestio
   - **Descripción**: Plan de soporte y mantenimiento continuo.
   - **Criterios de Evaluación**: Diagnóstico, parches, actualizaciones de software.
   - **Prioridad**: Media
-
 ## Levantamiento de Requerimientos
 
 En XP, el levantamiento de los requerimientos es un proceso iterativo y colaborativo. El cliente (en este caso, el director del programa) trabaja de la mano con el equipo de desarrollo para crear **historias de usuario**, que describen las necesidades del sistema desde la perspectiva del usuario final. Estas historias se priorizan y se desarrollan en ciclos cortos, permitiendo la entrega continua de valor.
