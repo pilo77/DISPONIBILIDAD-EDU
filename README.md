@@ -155,10 +155,46 @@ El enfoque de diseño en XP se basa en el principio de **simplicidad**. Esto imp
 - **Diseño emergente**: El diseño del sistema cambia y mejora conforme se desarrollan nuevas funcionalidades.
 
 
+## Diagramas C4
+
+### Diagrama de Contexto
+
+Este diagrama ilustra el entorno general del sistema de gestión de horarios y cómo interactúa con los usuarios y sistemas externos. Muestra las principales entidades involucradas y sus relaciones con el sistema:
+
+- **Administrador:** Gestiona el sistema y realiza operaciones clave.
+- **Sistema de Gestión de Horarios:** El núcleo del sistema que maneja datos y procesos.
+- **Sistemas Externos:** Servicios y aplicaciones que se integran con el sistema para proporcionar funcionalidades adicionales.
+![Contexto](IMG/contexto.jpg)
+
+### Diagrama de Contenedores
+
+Aquí se presenta una vista detallada de los principales contenedores del sistema y su interacción:
+
+- **Front-End:** La interfaz de usuario que permite al Administrador interactuar con el sistema.
+- **API:** El backend que procesa las solicitudes del front-end y gestiona la lógica del negocio.
+- **Base de Datos:** Donde se almacenan todos los datos del sistema, incluyendo información sobre profesores, horarios, y asignaturas.
+![Contenedores](IMG/contenedores.jpg)
+
+### Diagrama de Componentes
+
+Este diagrama desglosa el API en componentes específicos y muestra cómo cada uno de ellos se comunica con otros:
+
+- **Administrador:** Interactúa con los siguientes componentes:
+  - **Profesores:** Registro y gestión de datos de los profesores.
+  - **Aulas:** Gestión de la disponibilidad y asignación de aulas.
+  - **Horarios:** Configuración y administración de horarios de clases.
+  - **Asignaturas:** Gestión de las asignaturas ofrecidas.
+  - **Reportes:** Generación de reportes sobre el estado y uso del sistema.
+  - **API de Notificaciones:** Envío de notificaciones a los usuarios cuando ocurren eventos importantes.Etc
+  ![Componentes](IMG/componentes.jpg)
+
+
+Cada diagrama proporciona una visión clara de los distintos niveles de interacción y la estructura del sistema, facilitando la comprensión de cómo se organizan y comunican los componentes en el entorno del Sistema de Gestión de Horarios.
+
 ## Ver Documentación
 La documentación más detallada del proyecto, desarrollado en el marco de trabajo ágil **Extreme Programming (XP)**, se puede ver en el siguiente enlace redireccionado al Drive:
 
 
 ### [Documento](https://docs.google.com/document/d/1OV6Yk-lWfgobOcHDnXjiGqmO7jfshhHu/edit?usp=sharing&ouid=109014329295797922250&rtpof=true&sd=true)
 [![Portada](IMG/Portada.PNG)](https://docs.google.com/document/d/1OV6Yk-lWfgobOcHDnXjiGqmO7jfshhHu/edit?usp=sharing&ouid=109014329295797922250&rtpof=true&sd=true)
-**[Haz clic aquí para ver la documentacion](https://docs.google.com/document/d/1OV6Yk-lWfgobOcHDnXjiGqmO7jfshhHu/edit?usp=sharing&ouid=109014329295797922250&rtpof=true&sd=true)**
+*[Haz clic aquí para ver la documentacion](https://docs.google.com/document/d/1OV6Yk-lWfgobOcHDnXjiGqmO7jfshhHu/edit?usp=sharing&ouid=109014329295797922250&rtpof=true&sd=true)*
