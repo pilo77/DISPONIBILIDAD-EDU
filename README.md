@@ -189,7 +189,7 @@ Este diagrama desglosa el API en componentes específicos y muestra cómo cada u
   ![Componentes](IMG/componentes.jpg)
 
 
-Cada diagrama proporciona una visión clara de los distintos niveles de interacción y la estructura del sistema, facilitando la comprensión de cómo se organizan y comunican los componentes en el entorno del Sistema de Gestión de Horarios.
+Cada diagrama proporciona una visión clara de los distintos niveles de interacción y la estructura del sistema, facilitando la comprensión de cómo se organizan y comunican los componentes en el entorno del Sistema de ORGANIZACION-HORARIOS.
 
 ## Ver Documentación
 La documentación más detallada del proyecto, desarrollado en el marco de trabajo ágil **Extreme Programming (XP)**, se puede ver en el siguiente enlace redireccionado al Drive:
