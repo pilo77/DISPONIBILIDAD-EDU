@@ -14,66 +14,67 @@ El sistema proporcionará una página web que permitirá a los encargados gestio
 
 ## Requerimientos Funcionales
 
-- **RF1: Gestión de Docentes y Carga Académica**
-  - **Historia de Usuario**: El director del programa debe poder gestionar la carga académica de los docentes, considerando los diferentes tipos de contratos (TC-40, MT-26, C-16).
-  - **Criterios de Aceptación**: El sistema debe permitir ingresar información de los docentes, calcular automáticamente sus horas de trabajo según su tipo de contrato y actualizar la carga horaria en tiempo real.
+
+- **RF1: Gestión de Profesores y Carga Académica**
+  - **Historia de Usuario**: El responsable del programa debe poder gestionar la carga académica de los profesores, considerando los diferentes tipos de contratos (TC-40, MT-26, C-16).
+  - **Criterios de Aceptación**: El sistema debe permitir ingresar la información de los profesores, calcular automáticamente sus horas de trabajo según su contrato y actualizar la carga horaria en tiempo real.
   - **Prioridad**: Alta
 
-- **RF2: Gestión de Salones y Bloques**
-  - **Historia de Usuario**: El director del programa debe poder asignar salones por bloques de tiempo, evitando conflictos de horarios.
-  - **Criterios de Aceptación**: El sistema debe permitir la asignación manual o automática de salones (A, B, C, con capacidad para 30 estudiantes), verificando que los salones no estén ocupados en el mismo horario.
+- **RF2: Gestión de Aulas y Bloques Horarios**
+  - **Historia de Usuario**: El responsable del programa debe poder asignar aulas por bloques de tiempo, evitando conflictos de horarios.
+  - **Criterios de Aceptación**: El sistema debe permitir la asignación manual o automática de aulas (A, B, C, con capacidad para 30 estudiantes), verificando que no estén ocupadas en el mismo horario.
   - **Prioridad**: Alta
 
-- **RF3: Asignación de Horarios y Evitación de Cruces**
-  - **Historia de Usuario**: El director del programa debe poder asignar los horarios de los docentes de acuerdo con su disponibilidad, evitando cruces o sobrecargas horarias.
-  - **Criterios de Aceptación**: Asignación automática de horarios basada en la disponibilidad de los profesores, verificando que el profesor y el salón estén disponibles en el horario seleccionado, evitando conflictos con otras clases.
+- **RF3: Asignación de Horarios y Prevención de Solapamientos**
+  - **Historia de Usuario**: El responsable del programa debe poder asignar los horarios de los docentes de acuerdo con su disponibilidad, evitando solapamientos o sobrecargas horarias.
+  - **Criterios de Aceptación**: Asignación automática de horarios basada en la disponibilidad de los profesores y aulas, evitando conflictos con otras clases.
   - **Prioridad**: Alta
 
 - **RF4: Gestión de Asignaturas**
-  - **Historia de Usuario**: El director del programa debe poder asignar materias a los docentes y organizarlas en el sistema para su planificación.
-  - **Criterios de Aceptación**: El sistema debe permitir gestionar las asignaturas y vincularlas con los docentes y los salones. La asignación de clases debe respetar la disponibilidad de los profesores y los salones.
+  - **Historia de Usuario**: El responsable del programa debe poder organizar las asignaturas y asignarlas a los docentes para su planificación.
+  - **Criterios de Aceptación**: El sistema debe permitir gestionar las asignaturas y vincularlas con profesores y aulas disponibles.
   - **Prioridad**: Alta
 
 - **RF5: Exportación e Impresión de Horarios**
-  - **Historia de Usuario**: El director del programa debe poder exportar los horarios en un formato estandarizado para impresión o distribución.
-  - **Criterios de Aceptación**: Exportación de horarios en formato PDF para su impresión.
+  - **Historia de Usuario**: El responsable del programa debe poder exportar los horarios en un formato adecuado para impresión o distribución.
+  - **Criterios de Aceptación**: El sistema debe permitir la exportación de horarios en formato PDF para su impresión.
   - **Prioridad**: Media
 
-- **RF6: Envío de Horarios por Email y WhatsApp**
-  - **Historia de Usuario**: Los profesores deben recibir automáticamente sus horarios por correo electrónico o WhatsApp.
-  - **Criterios de Aceptación**: Envío automático de horarios y confirmación de recepción.
+- **RF6: Envío de Horarios por Correo Electrónico y WhatsApp**
+  - **Historia de Usuario**: Los profesores deben recibir automáticamente sus horarios a través de correo electrónico o WhatsApp.
+  - **Criterios de Aceptación**: El sistema debe enviar los horarios de forma automática, garantizando la recepción.
   - **Prioridad**: Media
 
 - **RF7: Notificaciones Automáticas**
-  - **Historia de Usuario**: Los profesores deben recibir notificaciones automáticas en caso de que haya cambios o actualizaciones en sus horarios.
-  - **Criterios de Aceptación**: Envío de notificaciones automáticas por correo electrónico o WhatsApp cuando se realicen cambios en los horarios.
+  - **Historia de Usuario**: Los profesores deben ser notificados automáticamente si hay cambios o actualizaciones en sus horarios.
+  - **Criterios de Aceptación**: Notificación automática por correo electrónico o WhatsApp cuando se realicen modificaciones en los horarios.
   - **Prioridad**: Alta
 
 ## Requerimientos No Funcionales
 
-- **RNF1: Protección de Datos y Seguridad**
-  - **Descripción**: Garantizar la seguridad de la información y la protección contra accesos no autorizados.
-  - **Criterios de Evaluación**: Implementación de medidas de autenticación robustas, cifrado de datos en tránsito y en reposo, y gestión adecuada de permisos de usuario.
+- **RNF1: Seguridad y Protección de Datos**
+  - **Descripción**: Asegurar la protección de la información y evitar accesos no autorizados.
+  - **Criterios de Evaluación**: Implementar autenticación robusta, cifrado de datos en tránsito y en reposo, y una adecuada gestión de permisos de usuarios.
   - **Prioridad**: Alta
 
-- **RNF2: Escalabilidad y Capacidad de Manejo de Carga**
-  - **Descripción**: Asegurar que el sistema pueda manejar un número creciente de usuarios y operaciones sin degradación en el rendimiento.
-  - **Criterios de Evaluación**: Evaluación de la capacidad del sistema para manejar múltiples solicitudes concurrentes, optimización del rendimiento de bases de datos, y capacidad para distribuir la carga entre servidores si es necesario.
+- **RNF2: Escalabilidad y Rendimiento**
+  - **Descripción**: Garantizar que el sistema pueda manejar un mayor número de usuarios y operaciones sin afectar el rendimiento.
+  - **Criterios de Evaluación**: Evaluación de la capacidad del sistema para gestionar múltiples solicitudes simultáneas y optimización de bases de datos.
   - **Prioridad**: Alta
 
-- **RNF3: Usabilidad y Experiencia del Usuario**
-  - **Descripción**: Proporcionar una interfaz intuitiva y fácil de usar que se adapte a diferentes dispositivos y resoluciones de pantalla.
-  - **Criterios de Evaluación**: Pruebas de usabilidad para asegurar una navegación fluida, diseño responsive que se adapte a dispositivos móviles y de escritorio, y cumplimiento de principios de diseño accesible.
+- **RNF3: Usabilidad y Experiencia de Usuario**
+  - **Descripción**: Proveer una interfaz intuitiva que funcione adecuadamente en diferentes dispositivos.
+  - **Criterios de Evaluación**: Realización de pruebas de usabilidad, diseño adaptable (responsive) y accesibilidad en la navegación.
   - **Prioridad**: Media
 
-- **RNF4: Alta Disponibilidad y Fiabilidad**
-  - **Descripción**: Garantizar que el sistema tenga un tiempo de actividad cercano al 100%, minimizando los tiempos de inactividad y asegurando la continuidad del servicio.
-  - **Criterios de Evaluación**: Implementación de estrategias de alta disponibilidad, planes de contingencia para fallos del sistema, y programación de mantenimientos en horarios de menor impacto.
+- **RNF4: Alta Disponibilidad**
+  - **Descripción**: Asegurar que el sistema esté disponible casi en todo momento, minimizando tiempos de inactividad.
+  - **Criterios de Evaluación**: Implementación de estrategias de alta disponibilidad y planificación de mantenimientos en horas de bajo uso.
   - **Prioridad**: Alta
 
 - **RNF5: Soporte Técnico y Actualizaciones**
-  - **Descripción**: Proveer un plan integral para el soporte técnico y la actualización continua del sistema.
-  - **Criterios de Evaluación**: Disponibilidad de soporte técnico para resolver problemas, procedimientos para aplicar parches de seguridad y actualizaciones periódicas para mejorar el sistema.
+  - **Descripción**: Proveer un plan de soporte técnico y actualizaciones constantes del sistema.
+  - **Criterios de Evaluación**: Disponibilidad de soporte técnico para resolver problemas y procedimientos para actualizaciones periódicas.
   - **Prioridad**: Media
   
 ## Levantamiento de Requerimientos
